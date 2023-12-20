@@ -50,6 +50,7 @@
 
  =========== END CSS RESET ================
 */
+
 :root {
     --displayFont: 'MuseoModerno', sans-serif;
     --bodyFont: 'Rubik', sans-serif;
@@ -62,7 +63,6 @@
 h1 {
     font-family: var(--displayFont);
     font-weight: 400;
-
     margin: 10px;
 }
 h2 {
@@ -109,9 +109,12 @@ img {
     background-color: var(--bodyYellow);
     height: 10vh;
     display: flex;
-    flex-
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
 
 }
+
 .btn {
     font-family: var(--displayFont);
     font-weight: 100;

@@ -1,0 +1,160 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+/* 
+  Source: https://www.joshwcomeau.com/css/custom-css-reset/
+
+ =========== END CSS RESET ================
+*/
+:root {
+    --displayFont: 'MuseoModerno', sans-serif;
+    --bodyFont: 'Rubik', sans-serif;
+
+    --bodyGreen: rgb(88, 164, 61);
+    --bodyYellow: rgb(175, 181, 42);
+    --linkYellow: rgb(227, 237, 43);
+    --bodyAccentPink: rgb(254, 191, 155);
+}
+h1 {
+    font-family: var(--displayFont);
+    font-weight: 400;
+
+    margin: 10px;
+}
+h2 {
+    font-family: var(--displayFont);
+    font-weight: 100;
+    margin-left: 10px;
+}
+body {
+    padding-top: 2vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin: 5px;
+    background-color: antiquewhite;
+    color: rgb(15, 15, 15);
+    height: 100vh;
+    width: 100vw;
+
+    font-family: var(--bodyFont);
+} 
+
+img {
+    border-radius: 50%;
+}
+
+.nav {
+    background-color: var(--bodyGreen);
+    display: flex;
+    flex-flow: row;
+
+}
+.navText {
+    font-family: var(--displayFont);
+    font-weight: 100;
+    font-size: 2em;
+    text-decoration: none;
+    color: var(--linkYellow);
+    margin: 5px;
+}
+.title {
+    display: flex;
+    flex-direction: column;
+}
+.foot {
+    background-color: var(--bodyYellow);
+    height: 10vh;
+
+}
+.btn {
+    font-family: var(--displayFont);
+    font-weight: 100;
+    font-size: 1em;
+    text-decoration: none;
+    color: var(--linkYellow);
+
+    background-color: var(--bodyGreen);
+    border-radius: 10px;
+    padding: 10px;
+    width: 100px;
+    height: 30px;
+
+}
+.btnRound {
+    font-family: var(--displayFont);
+    font-weight: 100;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: var(--linkYellow);
+    
+    background-color: var(--bodyGreen);
+    border-radius: 50%;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+}
+.hero {
+  margin: 20px;
+  padding: 20px;
+    display: flex;
+    flex-flow: row;
+}
+.left {
+    padding: 10px;
+    display: flex;
+    width: 40vw;
+
+}
+.right {
+    padding: 10px;
+    width: 45vw;
+    text-align: justify;
+
+}
+.yellow {
+    background-color: var(--bodyYellow);
+}

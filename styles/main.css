@@ -108,6 +108,8 @@ img {
 .foot {
     background-color: var(--bodyYellow);
     height: 10vh;
+    display: flex;
+    flex-
 
 }
 .btn {

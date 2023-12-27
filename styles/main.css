@@ -72,10 +72,10 @@ h2 {
 }
 body {
     padding-top: 2vw;
-    padding-left: 5vw;
+    /* padding-left: 5vw; */
     padding-right: 5vw;
     margin: 5px;
-    background-color: antiquewhite;
+    background-color: rgb(255, 245, 231);
     color: rgb(15, 15, 15);
     height: 100vh;
     width: 100vw;
@@ -85,15 +85,23 @@ body {
 
 img {
     border-radius: 50%;
+    height: 100%;
+    width: 100%;
 }
+
 i, a {
-  color: rgb(15, 15, 15)
+  color: rgb(15, 15, 15);
+  text-decoration: none;
 }
 
 .nav {
     background-color: var(--bodyGreen);
+    width: 100vw;
     display: flex;
     flex-flow: row;
+    position: fixed;
+    top: 0;
+    left: 0;
 
 }
 .navText {
@@ -103,6 +111,7 @@ i, a {
     text-decoration: none;
     color: var(--linkYellow);
     margin: 5px;
+    margin-right: 3vw;
 }
 .title {
     display: flex;
@@ -110,6 +119,7 @@ i, a {
 }
 .foot {
     background-color: var(--bodyYellow);
+    width: 100vw;
     height: 10vh;
     display: flex;
     flex-direction: row;
@@ -117,6 +127,8 @@ i, a {
     align-content: center;
     align-items: center;
     padding: 10px;
+    position: fixed;
+    bottom: 0;
 
 }
 .footLeft, .footRight, .footCenter {
@@ -125,10 +137,10 @@ i, a {
 
 .btn {
     font-family: var(--displayFont);
-    font-weight: 100;
+    font-weight: 200;
     font-size: 1em;
     text-decoration: none;
-    color: var(--linkYellow);
+    color: white;
 
     background-color: var(--bodyGreen);
     border-radius: 10px;
@@ -142,40 +154,71 @@ i, a {
 }
 .btnRound {
     font-family: var(--displayFont);
-    font-weight: 100;
+    font-weight: 300;
     font-size: 1.1em;
     text-decoration: none;
-    color: var(--linkYellow);
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
     
     background-color: var(--bodyGreen);
+    margin: 0 1.1em;
+    padding: 0;
     border-radius: 50%;
-
-    padding: 1em;
-    max-width: 100px;
-    height: 200px;
-
+    /* padding: 20px 20px 20px 20px; */
 }
+.btnRound > a {
+  color: white;
+}
+
 .hero {
-  margin: 20px;
-  padding: 20px;
-    display: flex;
-    flex-flow: row;
+  position: absolute;
+  top: 20vh;
+  width: 100vw;
+  margin: 8px;
+  padding: 14px;
+  display: flex;
+  flex-flow: row;
 }
 .heroTextTop {
-  height: 4em;
+  min-height: 100px;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  width: 100;
 }
 .left {
     padding: 10px;
     display: flex;
-    width: 40vw;
+    width: 37vw;
 
 }
 .right {
     padding: 10px;
-    width: 45vw;
+    width: 55vw;
     text-align: justify;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+}
+.rightNav {
+  display: flex;
 
 }
 .yellow {
     background-color: var(--bodyYellow);
+}
+.white {
+  color: white;
+}
+.heroImg {
+  min-width: 300px;
+  min-height: 300px;
+  max-width: 350px;
+  max-height: 350px;
 }

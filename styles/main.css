@@ -81,6 +81,7 @@ body {
     width: 100vw;
 
     font-family: var(--bodyFont);
+    z-index: -3;
 } 
 
 img {
@@ -183,6 +184,7 @@ i, a {
   padding: 14px;
   display: flex;
   flex-flow: row;
+  z-index: -1;
 }
 .heroTextTop {
   min-height: 100px;
@@ -199,6 +201,16 @@ i, a {
     width: 37vw;
 
     justify-content: center;
+}
+.about {
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+.imgSub {
+  font-size: .9em;
+  padding: 5px;
+  background-color: rgb(230, 179, 187, .7);
 }
 .right {
     padding: 10px;

@@ -393,11 +393,29 @@ i, a {
 }
 @media screen and (max-width: 438px) {
   .btnRound {
-    height: 80px;
-    width: 80px;
-    font-size: .5em;
+    height: 78px;
+    width: 78px;
+    font-size: .45em;
   }
   .hero {
     height: 140vh;
+  }
+  h2 {
+    font-size: .85em;
+  }
+  .navText {
+    font-size: 1em;
+  }
+  img {
+    min-width: 250px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .btnRound {
+    min-width: 75px;
+    font-size: .3em;
+  }
+  .hero {
+    height: 150vh;
   }
 }

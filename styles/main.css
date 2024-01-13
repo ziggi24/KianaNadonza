@@ -105,6 +105,7 @@ i, a {
     position: fixed;
     top: 0;
     left: 0;
+    padding-left: 3%;
 
 }
 .navText {
@@ -121,7 +122,7 @@ i, a {
     flex-direction: column;
 }
 .left > h1, h2 {
-  padding-left: 15%;
+  padding-left: 10%;
 }
 .foot {
     background-color: var(--bodyYellow);

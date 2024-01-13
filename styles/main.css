@@ -391,3 +391,13 @@ i, a {
   }
 
 }
+@media screen and (max-width: 438px) {
+  .btnRound {
+    height: 80px;
+    width: 80px;
+    font-size: .5em;
+  }
+  .hero {
+    height: 140vh;
+  }
+}

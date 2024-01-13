@@ -251,14 +251,7 @@ i, a {
   text-decoration: underline;
 }
 .heroAbout {
-  position: absolute;
-  top: 20vh;
-  width: 95vw;
-  margin: 8px;
-  padding: 14px;
-  display: flex;
-  flex-direction: column;
-  z-index: -1;
+  height: 130vh
 }
 
 @media screen and (max-width: 1100px){
@@ -365,6 +358,11 @@ i, a {
     align-items: center;
     align-content: center;
   }
+  .heroAbout {
+    height: 230vh;
+    flex-direction: column;
+    justify-content: start;
+  }
 
 }
 @media screen and (max-width: 550px){
@@ -418,6 +416,9 @@ i, a {
   .foot {
     font-size: .8em;
   }
+  .heroAbout {
+    height: 230vh
+  }
 
 }
 @media screen and (max-width: 438px) {
@@ -457,6 +458,9 @@ i, a {
     display: flex;
     flex-direction: column;
   }
+  .heroAbout {
+    height: 250vh
+  }
 }
 @media screen and (max-width: 380px) {
   .btnRound {
@@ -465,5 +469,8 @@ i, a {
   }
   .hero {
     height: 150vh;
+  }
+  .heroAbout {
+    height: 300vh
   }
 }

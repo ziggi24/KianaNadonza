@@ -1,3 +1,7 @@
+/**
+ * This script handles the click events for the elements with IDs 'cv', 'pr', and 'uo'.
+ * It redirects the user to different locations based on the clicked element.
+ */
 console.log('connected!');
 
 cv = document.getElementById('cv')

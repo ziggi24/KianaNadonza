@@ -18,7 +18,7 @@ cv.addEventListener('click', function (e) {
 pr.addEventListener('click', function (e) {
     console.log('listener')
     e.preventDefault();
-    window.location = '#';
+    window.location = '/projects.html';
 }, false);
 uo.addEventListener('click', function (e) {
     console.log('listener')

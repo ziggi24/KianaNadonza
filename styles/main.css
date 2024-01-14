@@ -253,6 +253,14 @@ i, a {
 .heroAbout {
   height: 130vh
 }
+.projectTitle {
+  font-size: 1.5em;
+  font-weight: 400;
+  margin: 10px;
+}
+.black {
+  color: rgb(15, 15, 15);
+}
 
 @media screen and (max-width: 1100px){
  
